@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logger</title>
+    <script src="logger.js"></script>
+    <link rel="stylesheet" type="text/css" href="logger.css">
+  </head>
+  <body id="background" onload="init()">
+    <div id="who">
+      <div id="whoText">who are you?</div>
+      <input id="you" type="text" onkeyup="checkWho(event)" onfocus="resizeBig('whoText')" onblur="resizeSmall('whoText')"></br>
+    </div>
+    <div id="oneFace">
+      <div id="node">
+        <div id="nodeText">node</div>
+        <input id="oneInput_node" type="text" onfocus="resizeBig('nodeText')" onblur="resizeSmall('nodeText')">
+      </div>
+      <div id="what">
+        <div id="whatText">what</div>
+        <textarea id="oneInput_what" cols=31 rows=2 onfocus="resizeBig('whatText')" onblur="resizeSmall('whatText')"></textarea>
+      </div>
+      <div id="notify">notify</div>
+      <a id="nobody" href="javascript:notifynobody()" onfocus="resizeBig('nobody')" onblur="resizeSmall('nobody')" onmouseover="resizeBig('nobody')"
+        onmouseout="resizeSmall('nobody')">nobody</a></br>
+      <a id="AllIT" href="javascript:notifyAllIT()" onfocus="resizeBig('AllIT')" onblur="resizeSmall('AllIT')" onmouseover="resizeBig('AllIT')"
+        onmouseout="resizeSmall('AllIT')">All IT</a></br>
+      <a id="SMSIT" href="javascript:notifySMSIT()" onfocus="resizeBig('SMSIT')" onblur="resizeSmall('SMSIT')" onmouseover="resizeBig('SMSIT')"
+        onmouseout="resizeSmall('SMSIT')">SMSIT</a></br>
+      <a id="viewlogs" href="logger.txt">view logs</a></br>
+    </div>
+    <div id="display"></div>
+  </body>
+</html>
